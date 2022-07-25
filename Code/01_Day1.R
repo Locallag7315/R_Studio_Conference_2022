@@ -334,6 +334,7 @@ extract_workflow(final_fit)
 ############################
 #Combine multiple model predictions into 1 prediction
 #Need to save_pred and save_workflow both true
+#doesn't work with time series
 stack_ctrl <- control_resamples(save_pred = TRUE, save_workflow = TRUE)
 #Linear regression
 lr_res <- 
